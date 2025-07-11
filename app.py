@@ -66,7 +66,7 @@ if selected_test_set:
         raw_file_content = "" # Ensure it's empty if there's an error
 
 # --- Main Page ---
-st.header("Model Predictions and Rule Comparison")
+st.header("Take a cup of coffee while we work...☕")
 
 if st.button("Run Predictions"):
     if selected_test_set and raw_file_content:
@@ -135,21 +135,3 @@ if st.button("Run Predictions"):
             st.error(f"An unexpected error occurred: {e}")
     else:
         st.warning("Please select a test set first.")
-
-
-# --- Rule Comparison ---
-# st.header("Rule-Based Validation")
-# rules = pd.read_csv("../data/validation_rules/rules.csv") # Adjust path as needed
-# st.write("Predefined Rules:")
-# st.dataframe(rules)
-
-# You would call your rule application logic here
-# For simplicity, we'll just display the rules
-# In a real app, you would compare test_data['model_prediction']
-# against the rules.
-
-# from app.rules import apply_rules # This would need to be structured as a package
-# rule_results = apply_rules(test_data, rules)
-# test_data['rule_check'] = rule_results
-# st.write("Rule Check Results:")
-# st.dataframe(test_data)
