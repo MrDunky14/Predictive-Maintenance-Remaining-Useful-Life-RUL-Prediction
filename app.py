@@ -11,7 +11,7 @@ from custom_functions import import_data
 
 # FastAPI endpoint
 # Make sure this matches your FastAPI service's address and port
-API_URL = "http://127.0.0.1:8000/predict" # Changed endpoint name for clarity
+API_URL = "https://predictive-maintenance-remaining-useful.onrender.com/predict" # Changed endpoint name for clarity
 
 st.title("Predictive Maintenance: Remaining Useful Life (RUL) Prediction Showcase")
 
